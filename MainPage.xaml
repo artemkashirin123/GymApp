@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GymApp.MainPage"
+             Shell.NavBarIsVisible="False"
+              WidthRequest="452"
+             HeightRequest="720">
+    <Grid Background="#6e9cd2">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1.2*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="0.8*"/>
+            <RowDefinition Height="0.8*"/>
+            <RowDefinition Height="0.8*"/>
+            <RowDefinition Height="0.8*"/>
+        </Grid.RowDefinitions>
+        
+                <StackLayout Grid.Row="0" HorizontalOptions="Center" VerticalOptions="Center">
+             <Label Text="Step 1/5" FontSize="50" TextColor="White" />
+        </StackLayout>
+
+        <StackLayout Grid.Row="1" HorizontalOptions="Center" VerticalOptions="Center">
+            <Label Text="What is your purpose?" FontSize="30" TextColor="White"/>
+        </StackLayout>
+
+        <StackLayout Grid.Row="2" HorizontalOptions="Center" VerticalOptions="Center">
+            <Button Clicked="Button_Clicked" x:Name="btnMale"  Text="Weight loss" CornerRadius="40" WidthRequest="300" HeightRequest="80" BorderColor="Gray" TextColor="#6e9cd2" BackgroundColor="White" FontSize="30" BorderWidth="2" ImageSource="page11.jpg"/>
+        </StackLayout>
+
+        <StackLayout Grid.Row="3" HorizontalOptions="Center" VerticalOptions="Center">
+            <Button Clicked="Button_Clicked_1" Text="Keeping fit" CornerRadius="40" WidthRequest="300" HeightRequest="80" BorderColor="Gray" TextColor="#6e9cd2" BackgroundColor="White" FontSize="30" BorderWidth="2" ImageSource="page12.jpg"/>
+        </StackLayout>
+
+        <StackLayout Grid.Row="4" HorizontalOptions="Center" VerticalOptions="Center">
+            <Button Clicked="Button_Clicked_2" Text="Build muscle" CornerRadius="40" WidthRequest="300" HeightRequest="80" BorderColor="Gray" TextColor="#6e9cd2" BackgroundColor="White" FontSize="30" BorderWidth="2" ImageSource="page13.jpg"/>
+        </StackLayout>
+    </Grid>
+</ContentPage>

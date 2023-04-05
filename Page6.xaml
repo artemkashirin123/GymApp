@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GymApp.Page6"
+             Title="Page6"
+             Shell.NavBarIsVisible="False"
+             WidthRequest="452"
+             HeightRequest="720">
+    <VerticalStackLayout Background="#6e9cd2">
+        <Image Source="D:\Вадим\GymApp-master\Resources\Images\fitness.png" WidthRequest="200" HeightRequest="200" Margin="0, 70, 0, 0"/>
+        <Label Text="Home" FontSize="50" TextColor="White" Margin="0,-50,0,0" VerticalOptions="Center" HorizontalOptions="Center"/>
+        <Label Text="Gym" FontSize="50" TextColor="White" Margin="0,0,0,0" VerticalOptions="Center" HorizontalOptions="Center"/>
+
+        <Frame WidthRequest="270" HeightRequest="60" CornerRadius="40" Margin="0,25">
+            <HorizontalStackLayout>
+                <Image Source="login_icon.png" WidthRequest="28" HeightRequest="28"/>
+                <Entry Placeholder="Login" HeightRequest="30" WidthRequest="240" Margin="-6,-10,0,0" x:Name="entryLogin"/>
+            </HorizontalStackLayout>
+        </Frame>
+
+        <Frame WidthRequest="270" HeightRequest="60" CornerRadius="40" Margin="0, -10">
+            <HorizontalStackLayout>
+                <Image Source="password_icon.png" WidthRequest="28" HeightRequest="28"/>
+                <Entry Placeholder="Password" HeightRequest="30" WidthRequest="240" Margin="-6,-10,0,0" x:Name="entryLogin1"/>
+            </HorizontalStackLayout>
+        </Frame>
+
+        <Button Text="Sign In" FontSize="30" TextColor="#6e9cd2" BackgroundColor="White"  Margin="0,30" CornerRadius="50" WidthRequest="350" HeightRequest="70" BorderColor="Gray"  BorderWidth="2"/>
+        <Label Text="Sign Up" TextColor="White" HorizontalOptions="Center" FontSize="30" Margin="0, -20"/>
+        <Label Text="Skip" TextColor="White" HorizontalOptions="Center" FontSize="20" Margin="0, 50"/>
+    </VerticalStackLayout>
+</ContentPage>

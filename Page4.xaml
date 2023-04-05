@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GymApp.Page4"
+             Title="Page4"
+             Shell.NavBarIsVisible="False"
+             WidthRequest="452"
+             HeightRequest="720">
+    <Grid Background="#6e9cd2">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1.2*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="0.8*"/>
+            <RowDefinition Height="0.8*"/>
+            <RowDefinition Height="0.8*"/>
+            <RowDefinition Height="0.2*"/>
+            <RowDefinition Height="0.8*"/>
+        </Grid.RowDefinitions>
+
+        <StackLayout Grid.Row="0" HorizontalOptions="Center" VerticalOptions="Center">
+            <Label Text="Step 4/5" FontSize="50" TextColor="White" />
+        </StackLayout>
+
+        <StackLayout Grid.Row="1" HorizontalOptions="Center" VerticalOptions="Center">
+            <Label Text="How often do you exercise?" FontSize="30" TextColor="White"/>
+        </StackLayout>
+
+        <Button  Style="{StaticResource btnStyle4}" Grid.Row="2" x:Name="btn1" Clicked="btn1_Clicked" CornerRadius="40" WidthRequest="300" HeightRequest="80" BorderColor="Gray"  BorderWidth="2" Margin="0,0,0,30"/>
+        <Button Grid.Row="2" Text="Just getting started"  Margin="0,20,0,17" Style="{StaticResource btnStyle5}" Clicked="btn1_Clicked"/>
+        <Button FontSize="30" Text="Newbie"  Style="{StaticResource btnStyle5}" Grid.Row="2" Clicked="btn1_Clicked" WidthRequest="150" HeightRequest="50" Margin="0,-30,0,30"/>
+
+
+        <Button  Style="{StaticResource btnStyle4}" Grid.Row="3" x:Name="btn2" Clicked="btn2_Clicked" CornerRadius="40" WidthRequest="300" HeightRequest="80" BorderColor="Gray"  BorderWidth="2" Margin="0,0,0,30"/>
+        <Button Grid.Row="3" Text="1-2 times a week"  Margin="0,20,0,17" Style="{StaticResource btnStyle5}" WidthRequest="200" HeightRequest="40" Clicked="btn2_Clicked"/>
+        <Button FontSize="30" Text="Keep on"  Style="{StaticResource btnStyle5}" Grid.Row="3" Clicked="btn2_Clicked" WidthRequest="150" HeightRequest="50" Margin="0,-27,0,30"/>
+
+        <Button  Style="{StaticResource btnStyle4}" Grid.Row="4" x:Name="btn3" Clicked="btn3_Clicked" CornerRadius="40" WidthRequest="300" HeightRequest="80" BorderColor="Gray"  BorderWidth="2" Margin="0,0,0,30"/>
+        <Button HeightRequest="45" Grid.Row="4" Text="More than 3 times a week"  Margin="0,15,0,17" Style="{StaticResource btnStyle5}" Clicked="btn3_Clicked"/>
+        <Button FontSize="30" Text="Advanced"  Style="{StaticResource btnStyle5}" Grid.Row="4" Clicked="btn3_Clicked" WidthRequest="170" HeightRequest="45" Margin="0,-30,0,30"/>
+
+        <StackLayout Grid.Row="6" HorizontalOptions="Center" VerticalOptions="Center">
+            <Button  Clicked="Button_Clicked" Text="Next" CornerRadius="40" WidthRequest="300" HeightRequest="80" BorderColor="Gray" TextColor="#6e9cd2" BackgroundColor="White" FontSize="30" BorderWidth="2"/>
+        </StackLayout>
+    </Grid>
+</ContentPage>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GymApp.Page3M"
+             Title="Page3M"
+             Shell.NavBarIsVisible="False"
+             WidthRequest="452"
+             HeightRequest="720">
+    <Grid Background="#6e9cd2">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1.2*"/>
+            <RowDefinition Height="0.8*"/>
+            <RowDefinition Height="0.47*"/>
+            <RowDefinition Height="0.8*"/>
+            <RowDefinition Height="0.8*"/>
+            <RowDefinition Height="0.8*"/>
+            <RowDefinition Height="0.8*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <Image Source="silhouette.png" Grid.RowSpan="6" Grid.Row="2" Margin="200, 0, -250, 0" />
+        <StackLayout Grid.Row="0" HorizontalOptions="Center" VerticalOptions="Center">
+            <Label Text="Step 3/5" FontSize="50" TextColor="White" />
+        </StackLayout>
+
+        <StackLayout Grid.Row="1" HorizontalOptions="Center" VerticalOptions="Center">
+            <Label Text="What do you want to work on?" FontSize="30" TextColor="White"/>
+        </StackLayout>
+
+        <StackLayout Grid.Row="3" HorizontalOptions="Start" VerticalOptions="Center" Orientation="Horizontal">
+            <Button Clicked="Button_Clicked" Margin="10, 0, -7, 0"  Text="Hands" CornerRadius="35" WidthRequest="250" HeightRequest="70" TextColor="#6e9cd2" BackgroundColor="White" FontSize="20"/>
+            <Button CornerRadius="0"  WidthRequest="120" HeightRequest="3" BackgroundColor="White"/>
+            <Rectangle HeightRequest="13" WidthRequest="13" Margin="-10,-10,0,-10" BackgroundColor="White"/>
+        </StackLayout>
+
+        <StackLayout Grid.Row="4" HorizontalOptions="Start" VerticalOptions="Center" Orientation="Horizontal">
+            <Button Clicked="Button_Clicked" Margin="10" Text="Spine" CornerRadius="35" WidthRequest="250" HeightRequest="70" TextColor="#6e9cd2" BackgroundColor="White" FontSize="20"/>
+            <Button Margin="-12, 0, 0, 0" CornerRadius="0"  WidthRequest="150" HeightRequest="3" BackgroundColor="White"/>
+            <Rectangle HeightRequest="13" WidthRequest="13" Margin="-10,-10,0,-10" BackgroundColor="White"/>
+        </StackLayout>
+
+        <StackLayout Grid.Row="5" HorizontalOptions="Start" VerticalOptions="Center" Orientation="Horizontal">
+            <Button Clicked="Button_Clicked" Margin="10"  Text="Torso" CornerRadius="35" WidthRequest="250" HeightRequest="70" TextColor="#6e9cd2" BackgroundColor="White" FontSize="20"/>
+            <Button Margin="-12, 0, 0, 0" CornerRadius="0"  WidthRequest="160" HeightRequest="3" BackgroundColor="White"/>
+            <Button Margin="-2.6, 0, 0, 16"   WidthRequest="3" HeightRequest="30" BackgroundColor="White"/>
+            <Rectangle HeightRequest="13" WidthRequest="13" Margin="-8,-50,0,-10" BackgroundColor="White"/>
+        </StackLayout>
+
+        <StackLayout Grid.Row="6" HorizontalOptions="Start" VerticalOptions="Center" Orientation="Horizontal">
+            <Button Clicked="Button_Clicked" Margin="10"  Text="Legs" CornerRadius="35" WidthRequest="250" HeightRequest="70" TextColor="#6e9cd2" BackgroundColor="White" FontSize="20"/>
+            <Button Margin="-12, 0, 0, 0" CornerRadius="0"  WidthRequest="135" HeightRequest="3" BackgroundColor="White"/>
+            <Rectangle HeightRequest="13" WidthRequest="13" Margin="-10,-10,0,-10" BackgroundColor="White"/>
+        </StackLayout>
+    </Grid>
+</ContentPage>
